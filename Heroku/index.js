@@ -9,8 +9,7 @@ app.get('/env', (request, response) =>{
   if (config.util.getEnv("NODE_ENV") === "Testing") {
     response.send('<b>You are working in the <em>TEST</em> environment.</b>')
   } else if (config.util.getEnv("NODE_ENV") === "Heroku Test") {
-    
-  
+  }    
 })
 
 app.get('/env', (request, response) => {
